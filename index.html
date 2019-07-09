@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/mblode/marx/master/css/marx.min.css">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <script lang="js">
+
+        </script>
+    </head>
+    <body>
+        <main>
+            <h1>Weather-inator <i class="em em-partly_sunny_rain"></i></h1>
+            <p>Input a location, zip code or coordinates to get weather for the area</p>
+            <hr>
+            <input type="text" id="area" placeholder="Location">
+            <br>
+            <button onclick="var query = document.getElementById('area').value; var que = query.replace(/ /g, '%');location.replace('/getWeather.php/?quer=' + que )">Submit</button>
+            <div id="weather"></div>
+        </main>
+    </body>
+</html>
